@@ -34,11 +34,15 @@
 		background-color: rgba(0,0,0,.6)
 	}
 
+	.image:hover {
+		cursor: pointer;
+	}
+
 </style>
 
 
 <div class="wrapper xs-mx-autos">
-	<header class="xs-py1 xs-mb3 text-gray--lightest ">
+	<header class="xs-py1 xs-mb3 md-mb4 text-gray--lightest ">
 
 		<i class="fa fa-bars fa-2x xs-mx1"></i>
 
@@ -53,7 +57,7 @@
 	<div class="flow col xs-col-12 md-col-8">
 
 		<div class="header xs-mb4">
-			<h1 class="post-title bold xs-text-2">27 Times Taylor Swift Failed So Hard She Almost&nbsp;Won</h1>
+			<h1 class="post-title bold xs-text-2 md-text-1">27 Times Taylor Swift Failed So Hard She Almost&nbsp;Won</h1>
 			<p class="description xs-mt1 xs-mb2 xs-text-3">So adorably awkward.</p>
 
 			<p class="xs-text-6 text-gray--lightest xs-mb1">Posted on  Aug. 3, 2015, at 9:40 a.m.</p>
@@ -74,7 +78,7 @@
 		</div>
 
 
-		<div class="share-tools col xs-col-12 xs-mb2 text-white xs-text-center">
+		<div class="share-tools col xs-col-12 xs-mb2 md-mb4 text-white xs-text-center">
 			<div class="col xs-col-2 xs-p1 fill-facebook"><i class="fa fa-facebook fa-lg"></i></div>
 			<div class="col xs-col-2 xs-p1 fill-gray"><i class="fa fa-envelope fa-lg"></div>
 			<div class="col xs-col-2 xs-p1 fill-green"><i class="fa fa-commenting fa-lg"></div>
@@ -84,7 +88,93 @@
 		</div>
 
 
-		<div class="col xs-col-12 xs-mb2">…</div>
+		<div class="col xs-col-12 xs-mb2">
+			
+		</div>
+
+
+		<div class="subbuzz col xs-col-12 md-col-8 xs-mb4">
+
+			<h2 class="xs-text-3 md-text-2 bold xs-mb2">4. And when she interrupted an interview to yell at a bee.</h2>
+
+			<div class="image-container xs-inline-block">
+
+				<div class="image float-left relative">
+
+					<button class="gif button overlay absolute fill-gray--darker text-white">
+						<i class="fa fa-play fa-lg xs-pr1"></i>GIF
+					</button>
+
+					<button class="scrub button--small overlay absolute fill-gray--darker text-white xs-hide">
+						<i class="fa fa-hand-o-up"></i>
+					</button>
+
+					<img src="http://ak-hdl.buzzfed.com/static/2015-08/3/8/enhanced/webdr14/anigif_enhanced-29949-1438603342-13_preview.gif" />
+
+				</div> <!-- /.image -->
+
+				<div class="image-meta clearfix xs-px1 xs-py1 fill-gray--lighter xs-border--lighter">
+
+					<div class="col xs-col-10 float-left">
+						<p class="xs-text-5">Caption text goes here, caption text goes here caption text goes here.</p>
+					</div>
+
+					<div class="actions float-right xs-mb1">
+						<button class="button--small button--secondary xs-border--lighter text-gray--lighter">
+						<i class="fa fa-share-square-o fa-lg"></i>
+					</button>
+					</div>
+
+				</div> <!-- /.image-meta -->
+
+				<h6 class="clearfix float-right xs-mt1 xs-text-6 text-gray--lightest">
+					<a href="dailyswiftgifs.tumblr.com" class="link-gray--lighter">dailyswiftgifs.tumblr.com</a>
+				</h6>
+
+			</div> <!-- /.image-container -->
+		</div> <!-- /.subbuzz -->
+
+
+		<div class="subbuzz col xs-col-12 md-col-8 xs-mb4">
+
+			<h2 class="xs-text-3 md-text-2 bold xs-mb2">4. And when she interrupted an interview to yell at a bee.</h2>
+
+			<div class="image-container xs-inline-block">
+
+				<div class="image float-left relative">
+
+					<button class="gif button overlay absolute fill-gray--darker text-white">
+						<i class="fa fa-play fa-lg xs-pr1"></i>GIF
+					</button>
+
+					<button class="scrub button--small overlay absolute fill-gray--darker text-white xs-hide">
+						<i class="fa fa-hand-o-up"></i>
+					</button>
+
+					<img src="http://ak-hdl.buzzfed.com/static/2015-08/3/8/enhanced/webdr14/anigif_enhanced-29949-1438603342-13_preview.gif" />
+
+				</div> <!-- /.image -->
+
+				<div class="image-meta clearfix xs-px1 xs-py1 fill-gray--lighter xs-border--lighter">
+
+					<div class="col xs-col-10 float-left">
+						<p class="xs-text-5">Caption text goes here, caption text goes here caption text goes here.</p>
+					</div>
+
+					<div class="actions float-right xs-mb1">
+						<button class="button--small button--secondary xs-border--lighter text-gray--lighter">
+						<i class="fa fa-share-square-o fa-lg"></i>
+					</button>
+					</div>
+
+				</div> <!-- /.image-meta -->
+
+				<h6 class="clearfix float-right xs-mt1 xs-text-6 text-gray--lightest">
+					<a href="dailyswiftgifs.tumblr.com" class="link-gray--lighter">dailyswiftgifs.tumblr.com</a>
+				</h6>
+
+			</div> <!-- /.image-container -->
+		</div> <!-- /.subbuzz -->
 
 
 		<div class="subbuzz col xs-col-12 md-col-8 xs-mb4">
@@ -178,13 +268,15 @@
 
 
 <script>
+		
+	$(document).ready(function(){
 
-$(document).ready(function(){
-
-	$('.image').click(function() {
+		$('.image').click(function() {
+			$('.scrub').removeClass('xs-hide');
+			$('.gif').addClass('xs-hide');
+			$(".image img").attr('src',"http://cl.ly/c947/anigif_enhanced-29949-1438603342-13.gif");
+			return false;
+		});
 
 	});
-
-});
-
 </script>
