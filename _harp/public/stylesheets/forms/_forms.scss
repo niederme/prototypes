@@ -54,9 +54,6 @@ $input-height-small: 2rem;
   padding: .5rem .625rem;
 }
 
-.form-label--small {
-  font-size: $text-5;
-}
 
 .select--small {
   padding: 0 2rem 0 .625rem;
@@ -127,6 +124,13 @@ $input-height-small: 2rem;
   margin-bottom: $space-1; 
 }
 
+// form label small has less margin bottom than default size form labels 
+// in order for the entire unit to scale down proportionately 
+.form-label--small {
+  font-size: $text-5;
+  margin-bottom: .25rem;
+}
+
 .form-label--optional {
   color: $text-gray--lightest;
   font-weight: normal;
@@ -150,7 +154,7 @@ $input-height-small: 2rem;
   font-size: $text-5; 
 }
 
-.form-warning {
+.form-fieldset--warning {
   .form-feedback,
   .form-label {
     color: $text-orange;  
@@ -161,7 +165,7 @@ $input-height-small: 2rem;
   }
 }
 
-.form-success {
+.form-fieldset--success {
   .form-feedback,
   .form-label {
     color: $text-green;  
@@ -188,7 +192,7 @@ $input-height-small: 2rem;
   }
 }
 
-.form-error {
+.form-fieldset--error {
   .form-feedback,
   .form-label {
     color: $text-red;  
