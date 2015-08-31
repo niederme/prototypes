@@ -1,2 +1,32 @@
+<section class="xs-m4">
+	<% var filter = /(\.html$)/; %>
+	<% var replace = /(\.html$)|(^index\.html$)/; %>
 
-<h1>Hello! This is BF prototype projects wowa. Here are some <a href="./demos">demoz</a></h1>
+	<% function tree(head, tail) { %>
+		<% for (key in head) { %>
+			<% val = head[key]; %>
+			<% if (key !== '.git' && key !== '_data') { %>
+				<% if (key == '_contents') { %>
+					<% for (i in val) { %>
+						<% file = val[i] %>
+						<% if (filter.test(file) && !/^404\.html/.test(file)) { %>
+							<% if (filter.test(file) && !/^index\.html/.test(file)) { %>
+								<li class=""><a href="<%= tail + file %>"><%= tail + file %></a></li>
+							<% } %>
+						<% } %>
+					<% } %>
+				<% } else { %>
+					<% tree(val, tail + key + "/") %>
+				<% } %>
+			<% } %>
+		<% } %>
+	<% } %>
+
+	<div>
+		<h1 class="xs-mx1 xs-mb2 xs-pb1 xs-border-bottom--lighter">proto.nieder.me</h1>
+		<ul>
+			<% tree(public, "/") %>
+		</ul>
+	</div>
+
+</section>

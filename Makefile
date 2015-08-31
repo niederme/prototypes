@@ -1,7 +1,11 @@
 # Run the Harp Server on port 8000
 run:
-	./node_modules/.bin/harp server _harp/ -p 8000
+	harp server -p 8000 ./_harp
 
-## Compile for Github Pages
+# Compile for Github Pages
 dev:
-	./node_modules/.bin/harp compile _harp ./
+	rm -Rf ./css
+	rm -Rf ./js
+	harp compile ./_harp ./www
+	mv -fv ./www/* ./
+	rm -R ./www
