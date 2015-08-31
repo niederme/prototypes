@@ -4,6 +4,7 @@ run:
 
 # Compile for Github Pages
 dev:
+	rm -Rf *.html
 	rm -Rf ./css
 	rm -Rf ./js
 	harp compile ./_harp ./www
