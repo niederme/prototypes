@@ -2,13 +2,14 @@
 
 A simple [harp server](http://harpjs.com) setup for prototyping, set up for easy deployment to [GitHub Pages.](https://help.github.com/articles/creating-project-pages-manually/) 
 
-This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple prototypes. 
-
+***
 ![http://github.com/buzzfeed/solid](http://cl.ly/coBI/logos.png)
 
+This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple prototypes. 
 
 _Forked from: @jakemhiller’s [jh-harp-base](https://github.com/jakemhiller/jh-harp-base) and @emilybrick’s [gh-pages](https://github.com/emilybrick/prototypes/tree/gh-pages)._
 
+***
 
 # Usage Instructions
 ### Adding and Editing
