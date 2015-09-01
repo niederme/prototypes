@@ -98,6 +98,14 @@
 		background-color: rgba(0,0,0,.6)
 	}
 
+	.image-1a {
+		padding-right: 2px;
+	}
+
+	.image-1b {
+		padding-left: 2px;
+	}
+
 	.image-1b .scrub {
 		left: 5%;
 	}
@@ -193,7 +201,7 @@
 
 				</div> <!-- /.image -->
 
-				<div class="image image-1 image-1b xs-relative col xs-col-6 xs-pl1">
+				<div class="image image-1 image-1b xs-relative col xs-col-6">
 
 					<button class="gif button overlay xs-absolute fill-gray--darker text-white">
 						<i class="fa fa-play fa-lg xs-pr1"></i>GIF
@@ -306,20 +314,25 @@
 	</div>
 
 <script>
-
 	$(document).ready(function(){
 
 		$('.image-1a').click(function() {
 			$('.image-1a .scrub').removeClass('xs-hide');
 			$('.image-1a .gif').addClass('xs-hide');
-			$(".image-1a img").attr('src',"http://cl.ly/c8u4/01a.gif");
+			$(".image-1a img").attr('src',"http://cl.ly/co8k/01a.gif");
+			$('.image-1b .scrub').removeClass('xs-hide');
+			$('.image-1b .gif').addClass('xs-hide');
+			$(".image-1b img").attr('src',"http://cl.ly/co0s/01b.gif");
 			return false;
 		});
 
 		$('.image-1b').click(function() {
 			$('.image-1b .scrub').removeClass('xs-hide');
 			$('.image-1b .gif').addClass('xs-hide');
-			$(".image-1b img").attr('src',"http://cl.ly/c94R/01b.gif");
+			$(".image-1b img").attr('src',"http://cl.ly/co0s/01b.gif");
+			$('.image-1a .scrub').removeClass('xs-hide');
+			$('.image-1a .gif').addClass('xs-hide');
+			$(".image-1a img").attr('src',"http://cl.ly/co8k/01a.gif");
 			return false;
 		});
 
