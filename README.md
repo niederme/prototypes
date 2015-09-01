@@ -4,7 +4,7 @@ A simple [harp server](http://harpjs.com) setup for prototyping, set up for easy
 
 This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple experiments. 
 
-![http://cl.ly/coAJ/logos.png](http://github.com/buzzfeed/solid)
+![http://github.com/buzzfeed/solid](http://cl.ly/coAJ/logos.png)
 
 
 _Forked from: @jakemhiller’s [jh-harp-base](https://github.com/jakemhiller/jh-harp-base) and @emilybrick’s [gh-pages](https://github.com/emilybrick/prototypes/tree/gh-pages)._
