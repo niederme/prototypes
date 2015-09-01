@@ -14,6 +14,8 @@ _This was forked from @jakemhiller’s [jh-harp-base](https://github.com/jakemhi
 ### Adding and Editing
 Source files are in `./_harp/public`, and get compiled up two levels to the root. (This is a requirement for publishing to Github Pages, but is a bit confusing.)
 
+To create a new file, duplicate the starter template, rename it and go nuts. 
+
 To update Solid, you can copy the `./lib` files from that project into `./_harp/public/css`. (Omit `solid-specific.scss`, unless you want it.)
 
 ***
