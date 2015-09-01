@@ -9,9 +9,15 @@ html {
 .login-social .fa {
 	width: 25px;
 }
-.login-social .fill-facebook:active {
-	background-color: #001e3b;
-}
+// .login-social .fill-facebook:active {
+// 	background-color: darken($fill-facebook, 20%);
+// }
+// .login-social .fill-twitter:active {
+// 	background-color: darken($fill-twitter, 20%);
+// }
+// .login-social .fill-google:active {
+// 	background-color: darken($fill-google, 20%);
+// }
 .section-divider span {
 	display: block;
 	width: 32px;
