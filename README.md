@@ -28,8 +28,6 @@ To update Solid, you can copy the `./lib` files from that project into `./_harp/
 
 ### Compile for Github Pages
 
-***
-
 	$ 	make dev
 	
 	rm -Rf *.html
