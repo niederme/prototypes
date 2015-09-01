@@ -2,7 +2,7 @@
 
 A simple [harp server](http://harpjs.com) setup for prototyping, set up for easy deployment to [GitHub Pages.](https://help.github.com/articles/creating-project-pages-manually/) 
 
-This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple experiments. 
+This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple prototypes. 
 
 ![http://github.com/buzzfeed/solid](http://cl.ly/coBI/logos.png)
 
