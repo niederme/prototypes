@@ -7,13 +7,14 @@ dev:
 	rm -Rf *.html
 	rm -Rf ./css
 	rm -Rf ./js
+	rm -Rf ./node_modules
 	harp compile ./_harp ./www
-	mv -fv ./www/* ./
+	rsync -av ./www/ ./
 	rm -R ./www
 
 # Push!
 push:
 	make dev
 	git add .
-	git commit -m "lazy commit message"
+	git commit -m "$m"
 	git push origin gh-pages
