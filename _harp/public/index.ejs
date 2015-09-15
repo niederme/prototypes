@@ -1,4 +1,4 @@
-<section class="xs-m4">
+<main class="xs-m4">
 	<% var filter = /(\.html$)/; %>
 	<% var replace = /(\.html$)|(^index\.html$)/; %>
 
@@ -22,11 +22,11 @@
 		<% } %>
 	<% } %>
 
-	<div>
+	<section>
 		<h1 class="xs-mx1 xs-mb2 xs-pb1 xs-border-bottom--lighter">proto.nieder.me</h1>
 		<ul>
 			<% tree(public, "/") %>
 		</ul>
-	</div>
+	</section>
 
-</section>
+</main>
