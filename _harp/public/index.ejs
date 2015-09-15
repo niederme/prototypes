@@ -5,7 +5,7 @@
 	<% function tree(head, tail) { %>
 		<% for (key in head) { %>
 			<% val = head[key]; %>
-			<% if (key !== '.git' && key !== '_data') { %>
+			<% if (key !== '.git' && key !== '_data' && key !== 'node_modules') { %>
 				<% if (key == '_contents') { %>
 					<% for (i in val) { %>
 						<% file = val[i] %>
