@@ -14,6 +14,7 @@ _This implementation includes BuzzFeed’s [Solid CSS framework](http://github.c
 
 1. Clone or fork this repo.
 2. `cd` into the directory, e.g.: `cd ./prototypes`
+3. Create a `gh-pages` branch. (This is the only branch you’ll work on.)
 3. Install Harp: `npm install harp -g`
 4. `cd` into `./_harp/public`
 5. Install Solid: `npm install bf-solid --save`
