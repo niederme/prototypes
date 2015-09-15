@@ -44,13 +44,16 @@ To create a new file, duplicate the starter template, rename it and go nuts.
 ***
 
 ### Compile for Github Pages
-Github pages have to be served out of the root folder, but Harp deletes the root on compile. So we will compile into a directory, and then move it to the root.
+Github pages have to be served out of the root folder, but Harp deletes the root on compile. So we will compile into a directory, and then move it to the root. (This first cleans up the root directory.)
 
 	$ 	make dev
 	
+	# Clean up
 	rm -Rf *.html
 	rm -Rf ./css
 	rm -Rf ./js
+
+	# Compile and move into place
 	harp compile ./_harp ./www
 	mv -fv ./www/* ./
 	rm -R ./www
