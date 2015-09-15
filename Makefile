@@ -16,5 +16,5 @@ dev:
 push:
 	make dev
 	git add .
-	git commit -m "$m"
+	git commit -m "$m "
 	git push origin gh-pages

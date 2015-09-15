@@ -56,10 +56,14 @@ Github pages have to be served out of the root folder, but Harp deletes the root
 ***
 
 ### Add, Commit and Push
+You could do a standard git add, commit and push. But I like to speed things up with the makefile. Just make sure to set a commit msg variable, `$m`:
 
-	$	git add .
-	$	git commit -m "commit message here!"
-	$	git push origin gh-pages
+	$	make push m="cool commit msg"
+
+	make dev
+	git add .
+	git commit -m "cool commit msg"
+	git push origin gh-pages
 
 ***
 	
