@@ -11,12 +11,12 @@ _This was forked from @jakemhiller’s [jh-harp-base](https://github.com/jakemhi
 ***
 
 # Usage Instructions
-### Adding and Editing
-Source files are in `./_harp/public`, and get compiled up two levels to the root. (This is a requirement for publishing to Github Pages, but is a bit confusing.)
 
-To create a new file, duplicate the starter template, rename it and go nuts. 
+### Install
 
-To update Solid, you can copy the `./lib` files from that project into `./_harp/public/css`. (Omit `solid-specific.scss`, unless you want it.)
+1. Clone or fork this repo
+2. `cd` into the directory
+3. install harp: `npm install harp -g`
 
 ***
 
@@ -28,7 +28,17 @@ To update Solid, you can copy the `./lib` files from that project into `./_harp/
 
 ***
 
+### Adding and Editing Files
+Source files are in `./_harp/public`, and get compiled up two levels to the root. (This is a requirement for publishing to Github Pages, but is a bit confusing.)
+
+To create a new file, duplicate the starter template, rename it and go nuts.
+
+To update Solid, you can copy the `./lib` files from that project into `./_harp/public/css`. (Omit `solid-specific.scss`, unless you need/want it.)
+
+***
+
 ### Compile for Github Pages
+Github pages have to be served out of the root folder, but Harp deletes the root on compile. So we will compile into a directory, and then move it to the root.
 
 	$ 	make dev
 	
