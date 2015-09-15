@@ -4,9 +4,7 @@ A simple [harp server](http://harpjs.com) setup for prototyping, set up for easy
 
 ***
 
-_This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple prototypes._
-
-_This was forked from @jakemhiller’s [jh-harp-base](https://github.com/jakemhiller/jh-harp-base) and @emilybrick’s [gh-pages](https://github.com/emilybrick/prototypes/tree/gh-pages)._
+_This implementation includes BuzzFeed’s [Solid CSS framework](http://github.com/buzzfeed/solid), as well as @niederme’s simple prototypes. It was forked from @jakemhiller’s [jh-harp-base](https://github.com/jakemhiller/jh-harp-base) and @emilybrick’s [gh-pages](https://github.com/emilybrick/prototypes/tree/gh-pages)._
 
 ***
 
@@ -14,10 +12,13 @@ _This was forked from @jakemhiller’s [jh-harp-base](https://github.com/jakemhi
 
 ### Install
 
-1. Clone or fork this repo
-2. `cd` into the directory
-3. Install harp: `npm install harp -g`
-4. If you want to [deploy to a custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/), you’ll need to edit the CNAME file. (If not, delete it.)
+1. Clone or fork this repo.
+2. `cd` into the directory, e.g.: `cd ./prototypes`
+3. Install Harp: `npm install harp -g`
+4. `cd` into `./_harp/public`
+5. Install Solid: `npm install bf-solid --save`
+
+If you want to [deploy to a custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/), you’ll need to edit the CNAME file. (If not, feel free to delete it.)
 
 ***
 
@@ -27,17 +28,17 @@ _This was forked from @jakemhiller’s [jh-harp-base](https://github.com/jakemhi
     
 	harp server _harp/ -p 8000
 
+To update Solid to the latest release:
+
+	$	cd ./_harp/public/node_modules/bf-solid
+	$	npm update
+
 ***
 
 ### Adding and Editing Files
 Source files are in `./_harp/public`, and get compiled up two levels to the root. (This is a requirement for publishing to Github Pages, but is a bit confusing.)
 
 To create a new file, duplicate the starter template, rename it and go nuts.
-
-To update Solid:
-
-	$	cd ./_harp/public/node_modules/bf-solid
-	$	npm update
 
 ***
 
@@ -60,7 +61,6 @@ You could do a standard git add, commit and push. But I like to speed things up 
 
 	$	make push m="cool commit msg"
 
-	make dev
 	git add .
 	git commit -m "cool commit msg"
 	git push origin gh-pages
