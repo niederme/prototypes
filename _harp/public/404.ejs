@@ -1,6 +1,30 @@
-    <main class="content xs-mx-auto xs-text-center">
-      <img src="http://media.giphy.com/media/l41lVaQTA7IUbFUWI/giphy.gif" style="width: 100%;"/>
-      <h1 class="xs-mt4">¯\_(ツ)_/¯ </h1>
-			<h2 class="xs-mb4">404</h2>
-			<a href="./" class="button button--secondary">&lt; Home</a>
-    </main>
+<style>
+
+	html {
+		background: url(http://media.giphy.com/media/l41lVaQTA7IUbFUWI/giphy.gif) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	h1 {
+		font-size: 10vw;
+	}
+
+	.button--secondary {
+		color: white;
+		border-color: white;
+	}
+
+	.button--secondary:not(.button--disabled):hover {
+		background-color: rgba(255,255,255,.5);
+		color: #07e;
+	}
+
+</style>
+
+<section class="xs-absolute xs-t4 xs-l4">
+	<h1 class="xs-mt4 text-white bold">404</h1>
+	<a href="/" class="button button--secondary">&lt; Home</a>
+</section>

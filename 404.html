@@ -6,18 +6,42 @@
     <meta name="viewport" content="width=device-width">
     <script>!function(e){var t,a={kitId:"ymm5qgg",scriptTimeout:3e3,async:!0},c=e.documentElement,i=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},a.scriptTimeout),n=e.createElement("script"),s=!1,o=e.getElementsByTagName("script")[0];c.className+=" wf-loading",n.src="https://use.typekit.net/"+a.kitId+".js",n.async=!0,n.onload=n.onreadystatechange=function(){if(t=this.readyState,!(s||t&&"complete"!=t&&"loaded"!=t)){s=!0,clearTimeout(i);try{Typekit.load(a)}catch(e){}}},o.parentNode.insertBefore(n,o)}(document);</script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="./node_modules/bf-solid/lib/solid.css">
+    <link rel="stylesheet" href="/node_modules/bf-solid/lib/solid.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
 
     <main class="content">
-      <main class="content xs-mx-auto xs-text-center">
-      <img src="http://media.giphy.com/media/l41lVaQTA7IUbFUWI/giphy.gif" style="width: 100%">
-      <h1 class="xs-mt4">¯\_(ツ)_/¯ </h1>
-			<h2 class="xs-mb4">404</h2>
-			<a href="./" class="button button--secondary">&lt; Home</a>
-    </main>
+      <style>
+
+	html {
+		background: url(http://media.giphy.com/media/l41lVaQTA7IUbFUWI/giphy.gif) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	h1 {
+		font-size: 10vw;
+	}
+
+	.button--secondary {
+		color: white;
+		border-color: white;
+	}
+
+	.button--secondary:not(.button--disabled):hover {
+		background-color: rgba(255,255,255,.5);
+		color: #07e;
+	}
+
+</style>
+
+<section class="xs-absolute xs-t4 xs-l4">
+	<h1 class="xs-mt4 text-white bold">404</h1>
+	<a href="/" class="button button--secondary">&lt; Home</a>
+</section>
     </main>
 
   </body>
