@@ -1,0 +1,20 @@
+<style>
+.container {
+	min-width: 300px;
+	max-width: 1200px;
+}
+.button-group .button-group__radio:checked+.button-group__item, .button-group--small .button-group__radio:checked+.button-group__item {
+  background-color: #ddd;
+}
+</style>
+
+<section class="container xs-mx-auto xs-p6 fill-gray--lighter ">
+	<div class="button-group">
+		<input class="button-group__radio" type="radio" id="option_1" value="option_1" name="options" checked="checked">
+		<label class="button-group__item xs-px3" for="option_1"><i class="fa fa-th xs-pr1"></i>3 Image</label>
+		<input class="button-group__radio" type="radio" id="option_2" value="option_2" name="options">
+		<label class="button-group__item xs-px3" for="option_2"><i class="fa fa-th-large xs-pr1"></i>2 Image</label>
+		<input class="button-group__radio" type="radio" id="option_3" value="option_3" name="options">
+		<label class="button-group__item xs-px3" for="option_3"><i class="fa fa-i-cursor xs-pr1"></i>Input</label>
+	</div>
+</section>
