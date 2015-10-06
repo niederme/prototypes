@@ -13,7 +13,7 @@ dev:
 	rm -R ./www
 
 # Push!
-push:
+pub:
 	git add .
 	git commit -m "$m "
 	git push origin gh-pages
