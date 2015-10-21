@@ -1,7 +1,9 @@
 <style>
 .container {
-	width: 477px;
-	height: 245px;
+	width: 465px;
+}
+.container.mobile {
+	width: 320px;
 }
 .podcast__imagecontainer {
 	background: #c15aa6; /* Old browsers */
@@ -16,23 +18,30 @@
 .podcast__image {
 	width: 100%;
 	height: 245px;
-	background: url("http://f.cl.ly/items/2x2K0r420T2n1L1n0F1w/BUZZ_AUDIO_Lena_Podcast_Page.png") no-repeat bottom left;
+	background: url("http://cl.ly/dbF4/BUZZ_AUDIO_Lena_Podcast_Page.png") no-repeat bottom left;
 	background-size: cover;
+}
+.mobile .podcast__image {
+	height: 265px;
+	background-size: contain;
 }
 </style>
 
-<main class="container xs-mt4 xs-ml6">
-<h1 class="xs-mb6">This is a test</h1>
+<main class="xs-mt4 xs-ml6">
+<h1 class="xs-mb6">BF-23755 | New Lena Podcast Launch</h1>
 
-	<section class="clearfix container">
-
-		<h2 class="bold xs-mb1">Women Of The Hour</h2>
-		<p class="xs-mb2">Lena Dunham hosts this podcast miniseries about friendship, love, work, bodies and more.</p>
-
+	<section class="clearfix container xs-mb6">
+		<h5 class="xs-mb2 caps text-gray--lightest">Desktop</h5>
 		<div class="podcast__imagecontainer">
 			<div class="podcast__image "></div>
 		</div>
+	</section>
 
+	<section class="clearfix container mobile">
+		<h5 class="xs-mb2 caps text-gray--lightest">Mobile</h5>
+		<div class="podcast__imagecontainer">
+			<div class="podcast__image"></div>
+		</div>
 	</section>
 
 </main>
