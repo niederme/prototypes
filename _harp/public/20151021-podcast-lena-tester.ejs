@@ -25,10 +25,14 @@
 	width: 100%;
 	height: 245px;
 	background: url("http://cl.ly/dbF4/BUZZ_AUDIO_Lena_Podcast_Page.png") no-repeat bottom right;
-	background-size: cover;
 }
 .mobile .podcast__image {
 	height: 265px;
+}
+.cover {
+	background-size: cover;
+}
+.contain {
 	background-size: contain;
 }
 </style>
@@ -36,7 +40,9 @@
 <main class="xs-mt4 xs-ml6">
 <h1 class="xs-mb6">BF-23755 | New Lena Podcast Launch</h1>
 
-	<section class="clearfix container xs-mb6">
+	<button class="turn-on button button--primary xs-mb6">Turn <span>on</span> background-sizing</button>
+
+	<section class="clearfix container desktop xs-mb6">
 		<h5 class="xs-mb1 caps text-gray--lightest">Desktop</h5>
 		<div class="podcast__imagecontainer">
 			<div class="podcast__image "></div>
@@ -65,3 +71,11 @@
 	</section>
 
 </main>
+
+<script>
+	$("button.turn-on").on('click', function(){
+		$('button').replaceWith('<button class="button button--primary button--disabled xs-mb6">Done');
+		$('.desktop .podcast__image').addClass('cover');
+		$('.mobile .podcast__image').addClass('contain');
+	});
+</script>
