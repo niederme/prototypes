@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+  <head>
+    <title>20160519-Investigations-SecureDrop-Cards – proto.nieder.me</title>
+    <meta name="description" content="20160519-Investigations-SecureDrop-Cards">
+    <meta name="viewport" content="width=device-width">
+    <script>!function(e){var t,a={kitId:"ymm5qgg",scriptTimeout:3e3,async:!0},c=e.documentElement,i=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},a.scriptTimeout),n=e.createElement("script"),s=!1,o=e.getElementsByTagName("script")[0];c.className+=" wf-loading",n.src="https://use.typekit.net/"+a.kitId+".js",n.async=!0,n.onload=n.onreadystatechange=function(){if(t=this.readyState,!(s||t&&"complete"!=t&&"loaded"!=t)){s=!0,clearTimeout(i);try{Typekit.load(a)}catch(e){}}},o.parentNode.insertBefore(n,o)}(document);</script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cl.ly/gDAQ/solid.1.6.2.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+  </head>
+  <body>
+
+    <main class="content">
+      <style>
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/ProximaNova-Regular-webfont.woff2") format("woff2"), url("./fonts/ProximaNova-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/ProximaNova-Semibold-webfont.woff2") format("woff2"), url("./fonts/ProximaNova-Semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Caponi-Slab-Semibold";
+  src: url("./fonts/CaponiSlab-Semibold-Web.woff") format("woff"), url("./fonts/CaponiSlab-Semibold-Web.ttf") format("truetype"), url("./fonts/CaponiSlab-Semibold-Web.svg#svgFontName") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+.content-width {
+  max-width: 66rem;
+}
+.nav__wrapper {
+    height: 3.75rem;
+    box-shadow: 0 1px 0 rgba(173,168,168,0.1), 0 2px 1px rgba(181,179,179,0.1);
+    border-bottom: 1px solid rgba(41,41,41,0.1);
+}
+#buzzfeed-news-logo {
+    width: 12rem;
+		height: auto;
+}
+#email {
+	width: 1rem !important;
+  height: 1rem !important;
+	fill: #07e;
+}
+.antialised {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale  !important;
+  font-smoothing: antialiased         !important;
+}
+.tips__headline {
+		font-size: 2.25rem;
+		line-height: 1 !important;
+}
+.tips__subheadline {
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+@media (min-width: 40rem) {
+	.tips__headline {
+	  font-size: 3.5rem;
+	}
+  .tips__subheadline {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 52rem) {
+	.tips__headline {
+	    font-size: 3.5rem;
+	}
+  .tips__subheadline {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 64rem) {
+	.tips__headline {
+	    font-size: 4.5rem;
+	}
+  .tip-heading {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 65rem) {
+	.tips__headline {
+	    font-size: 4.7rem;
+	}
+}
+[class*="offset-0"] {
+  margin-left: 0 !important;
+}
+.tips__note .text-3 {
+  line-height: 1.5rem !important;
+}
+</style>
+
+<div class="nav__wrapper">
+	<nav class="clearfix xs-mx-auto xs-px2 sm-px4 fill-white">
+	  <div class="nav__content content-width xs-mx-auto xs-pt2">
+	    <a href="https://www.buzzfeed.com/news/">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1294.2 150" id="buzzfeed-news-logo">
+					<g fill="#222">
+						<path d="M0 147.3V0h65.7c28 0 42.4 17.9 42.4 37.5 0 18.3-11.5 30.9-25.4 33.8 15.9 2.4 28.3 17.7 28.3 36 0 22.3-14.6 40-42.8 40H0zM76.1 43.1c0-9.1-6.6-15.5-17.2-15.5H31.4v30.9h27.5c10.6 0 17.2-5.9 17.2-15.4zm2.9 59.8c0-9.3-6.6-16.8-18.8-16.8H31.4v33.6h28.9c11.6 0 18.7-6.2 18.7-16.8zM119.6 104.6v-64h28.2v63.1c0 12.7 7.7 21.9 22.7 21.9 14.8 0 22.6-9.2 22.6-21.9V40.6h28.1v63.9c0 26.8-16.1 45.6-50.6 45.6s-51-19-51-45.5zM230.5 147.3v-21l48.1-61.2h-48.1V40.6h86.3v20.1l-49 62.1h49.9v24.5h-87.2zM326.9 147.3v-21L375 65.1h-48.1V40.6h86.3v20.1l-49 62.1h49.9v24.5h-87.2zM424.6 147.3V0h102.2v27.6H456v30.9h53.3v27.6H456v61.2h-31.4zM517.2 93.9c0-30.9 23-55.9 55.2-55.9 32 0 53.4 23.9 53.4 58.5v6.6h-79.3c2 13 12.6 23.9 30.7 23.9 9.1 0 21.4-3.8 28.3-10.4l12.6 18.6c-10.6 9.7-27.4 14.8-43.9 14.8-32.5 0-57-21.9-57-56.1zM572.4 61c-17.4 0-25 12.1-26.1 22.7h52.6c-.9-10.2-8-22.7-26.5-22.7zM633.4 93.9c0-30.9 23-55.9 55.2-55.9 32 0 53.4 23.9 53.4 58.5v6.6h-79.3c2 13 12.6 23.9 30.7 23.9 9.1 0 21.4-3.8 28.3-10.4l12.6 18.6c-10.6 9.7-27.4 14.8-43.9 14.8-32.5 0-57-21.9-57-56.1zM688.6 61c-17.4 0-25 12.1-26.1 22.7h52.6c-.9-10.2-8-22.7-26.5-22.7zM752.3 147.5V40.4h43c33.7 0 58 20.2 58 53.5 0 33.2-24.2 53.6-57.8 53.6h-43.2zM826 93.9c0-16.6-10-30.4-29.6-30.4H779v60.9h17.4c18.7 0 29.6-14.6 29.6-30.5z"/></g><g fill="#E32"><path d="M871.3 130.1l9.4-1V58.6l-9.4-.8V42h36.1L945 98.5v-39l-10.4-1.6V42h35.2v15.8l-7.9 1.6v85.8h-15.2l-49.4-74.1V128l15.5 2.1v15.2h-41.6v-15.2zM1048.9 61.4c-1.7-4.5-3.5-4.8-8.6-4.8h-24.6v29.9h8.1c3.6 0 5.4-1.2 6.1-4l2.6-9.7h9.2v39.3h-9.4l-2.8-10.1c-1-3.3-2.6-4-6.3-4h-7.6v31.9h25.9c7.8 0 8.7-.7 10.7-5.6l6.6-17.2h11.1v38.1h-89.1V130l9.7-1.3V58.6l-9.7-.8V42h84.2v34.7h-10.2l-5.9-15.3zM1145.5 94.6l-16.2 51.7h-20.5l-26.1-88-6.9-.5V42h41.1v15.8l-7.9.7 16 55 12.4-41.9-4.3-13.2-6.4-.5V42h38.3v15.8l-6.8.7 17.2 55 13.2-52.7-9.2-3V42h33v15.8l-7.3 2.5-23.4 86h-19.8l-16.4-51.7zM1232.7 136.7l-2.3 8.6h-12.2v-34h13.7c4 16.8 13.5 21.5 22.8 21.5 10.1 0 15.8-4.1 15.8-12.7 0-7.8-8.6-11.2-23.6-16.3-16.5-5.4-28.9-13.9-28.9-32.4 0-20.3 16-31 32.5-31 9.1 0 18.3 3.5 23.1 9.1l2.1-7.4h12.1v29.2h-13.2c-2.5-10.6-10.7-16.3-21.1-16.3-7.6 0-13 3.5-13 10.1 0 8.9 9.1 11.6 22.1 15.8 17.2 5.9 31.7 12.9 31.7 32.7 0 22.3-18.3 34-35.5 34-10.1-.2-19.7-3.6-26.1-10.9z"/>
+					</g>
+				</svg>
+	    </a>
+		</div>
+	</nav>
+</div>
+
+<section class="tips__feature clearfix xs-mx-auto xs-py5 xs-px2 sm-px4 fill-gray-darker text-white">
+	<div class="content-width clearfix xs-mx-auto">
+    <div class="col sm-col-10 lg-col-10">
+      <h1 class="tips__headline slab xs-mb3 antialised">Share tips securely &amp; anonymously</h1>
+    </div>
+    <div class="col xs-col-11 md-col-9">
+      <p class="tips__subheadline antialised xs-mb1 sm-mb2">If you know something that deserves to be investigated and exposed in the public interest, <span class="bold">BuzzFeed News can help.</span></p>
+    </div>
+	</div>
+</section>
+
+<section class="tips__main clearfix xs-pl2 sm-pl4">
+  <div class="content-width clearfix xs-mx-auto fill-gray-lighter">
+
+		<article class="tips__note clearfix xs-py5 col sm-col-8 md-col-7 xs-pr2 sm-pr4 fill-white sm-border-right-lighter">
+      <div class="col md-col-11">
+  			<h2 class="tip-heading slab xs-mb2">Tell us what you know</h2>
+        <p class="xs-mb2">Have you come across evidence of corruption, crime or wrongdoing? Do you believe members of the public are being harmed, exploited or misled? Investigative journalism relies on people who have the courage to blow the whistle when they come across evidence of serious wrongdoing.</p>
+        <h2 class="tip-heading slab xs-pt2 xs-mb2">Protecting your identity</h2>
+  			<p class="xs-mb2">We can investigate most effectively if we know who you are and have a chance to discuss your information with you, even if you prefer to talk in confidence. We know that sources often risk serious reprisals, so we frequently agree to keep sources confidential. If we agree to keep you anonymous, that agreement is sacrosanct to us, and we will do everything possible to prevent ourselves from being forced to hand over your identity.</p>
+  			<p class="xs-mb2">Of course, sometimes sources are only prepared to disclose evidence without revealing their identity even to journalists. If you prefer to use a secure method that keeps your identity hidden from us, you can use our SecureDrop system [hyperlink]. SecureDrop is the world standard for sending documents anonymously; you can read more about it <a href="https://docs.securedrop.org/en/latest/"></a>here. When you interact with SecureDrop, we don’t have access to information that may personally identify you. Everything from your IP address to your physical location is masked by the the TOR/onion network.  SecureDrop allows for us to communicate with you without knowing who you are.</p>
+  			<p class="xs-mb2">You can also use an old-fashioned method that can be remarkably effective: the postal service. You can send mail to us in the United States or the United Kingdom — our addresses are <a href="https://www.torproject.org/about/overview.html.en">here</a>. If you wish to use the postal service and want to remain anonymous, consider leaving the return address blank, using a mailbox that's not near locations you visit often, and going to a mailbox where you don't think there's video surveillance.</p>
+  		  <p class="xs-mb2">You may wish to send us information without revealing your identity and then contact us directly to have a discussion, either on-the-record or in confidence, without leaving a paper-trail. See above for ways to get in touch with us.</p>
+        <h2 class="tip-heading slab xs-pt2 xs-mb2">Our promise to you</h2>
+        <p class="xs-mb2">Investigative journalism relies on people who have the courage to blow the whistle when they come across evidence of serious wrongdoing. But no system is 100% secure, so we cannot absolutely guarantee your security. For example, if the computer you are using to submit documents is already compromised, any activities, including communications, could be compromised as well. SecureDrop is state-of-the-art, but like all software, it could have security bugs that could be exploited by attackers. Ultimately, you use the service at your own risk.</p>
+        <p class="xs-mb2">Still, if you take the brave step to blow the whistle on major wrongdoing, we’ll do everything in our power to see that the public interest is served by investigating your information and bringing the truth to light.</p>
+  			<div class="col xs-col-6 xs-mt2">
+  				<p class="xs-mb2 text-5"><a href="https://www.buzzfeed.com/bensmith/" class="xs-block text-3 bold">Ben Smith</a> Editor-in-Chief</p>
+  				<p class="text-5"><a href="https://www.buzzfeed.com/shani/" class="xs-block text-3 bold">Shani O. Hilton</a> Executive Editor, News</p>
+  			</div>
+  			<div class="col xs-col-6 xs-mt2">
+  			  <p class="xs-mb2 text-5"><a href="https://twitter.com/janinegibson/" class="xs-block text-3 bold">Janine Gibson</a> Editor-in-Chief, UK</p>
+  			</div>
+
+        <div class="col xs-col-12 xs-py3 xs-my5 xs-border-top">
+          <h2 class="clearfix xs-mb2 slab bold">How to SecureDrop TK TK TK</h2>
+          <p class="xs-mb2">TK TK TK TK TK…</p>
+          <p class="xs-mb2">TK TK TK TK TK…</p>
+          <p class="xs-mb2">TK TK TK TK TK…</p>
+          <p class="xs-mb2">TK TK TK TK TK…</p>
+        </div>
+      </div>
+
+		</article>
+
+
+    <aside class="tips__contact fill-gray-lighter xs-p1 md-p3 xs-border-top-lighter xs-border-bottom-lighter col sm-col-4 md-col-5 sm-border-none">
+
+      <div class="card xs-p2 xs-mb1 md-mb3">
+        <h2 class="xs-mb2 text-3 bold"><a href="#">BuzzFeed News SecureDrop&nbsp;›</a></h2>
+        <div class="col xs-col-4 sm-col-3 md-col-4 xs-float-right xs-ml1 md-ml2 xs-mb1 sm-mb2 md-mb2">
+          <img src="http://cl.ly/g6q0/securedrop_logo.png">
+        </div>
+        <p class="xs-mb2 text-5">SecureDrop is a secure method that keeps your identity hidden from us. When you interact with SecureDrop, we don’t have access to any information that may personally identify you. Everything from your IP address to your physical location is abstracted using the TOR/onion network.</p>
+        <p class="text-5"><a href="#">More information below</a></p>
+      </div>
+
+      <div class="card xs-p2 xs-mb1 md-mb3">
+        <h2 class="xs-mb2 text-3 bold">Email Us</h2>
+        <p class="xs-mb2 text-5">To send us an encrypted email, please use our <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x7D31736F37CF4887">public PGP key&nbsp;›</a></p>
+        <p class="text-5"><a href="mailto:investigations@buzzfeed.com" class="xs-block text-4 bold"><svg viewBox="0 0 512 512" id="email" class="xs-align-middle xs-mr1">
+          <path d="M500 404.364v-216.545c-7.988 8.909-17.156 16.818-27.504 23.727-65.72 44.727-110.835 76.091-135.344 94.091-10.348 7.636-18.745 13.591-25.19 17.864-6.445 4.273-15.023 8.636-25.734 13.091-10.711 4.455-20.696 6.682-29.955 6.682h-.544c-9.259 0-19.244-2.227-29.955-6.682-10.711-4.455-19.289-8.818-25.734-13.091s-14.842-10.227-25.19-17.864c-30.863-22.364-76.068-53.727-135.616-94.091-10.348-7.091-19.426-15-27.232-23.727v216.545c0 12 4.266 22.273 12.799 30.818 8.533 8.545 18.79 12.818 30.772 12.818h400.857c11.982 0 22.24-4.273 30.772-12.818 8.533-8.545 12.799-18.818 12.799-30.818zm0-290.727c0-14.182-3.767-26-11.301-35.455-7.534-9.455-18.291-14.182-32.27-14.182h-400.857c-11.801 0-22.013 4.273-30.636 12.818-8.624 8.545-12.935 18.818-12.935 30.818 0 14.364 4.448 28.091 13.344 41.182 8.896 13.091 19.97 24.273 33.223 33.545 68.262 47.455 110.744 77 127.446 88.636 1.815 1.273 5.673 4.045 11.574 8.318 5.9 4.273 10.802 7.727 14.705 10.364 3.903 2.636 8.624 5.591 14.161 8.864 5.537 3.273 10.757 5.727 15.658 7.364 4.902 1.636 9.44 2.455 13.616 2.455h.544c4.176 0 8.714-.818 13.616-2.455 4.902-1.636 10.121-4.091 15.658-7.364 5.537-3.273 10.257-6.227 14.161-8.864 3.903-2.636 8.805-6.091 14.705-10.364 5.9-4.273 9.758-7.045 11.574-8.318 16.521-11.636 40.304-28.227 71.348-49.773 31.045-21.545 49.653-34.5 55.826-38.864 11.256-7.636 21.876-18.136 31.862-31.5 9.985-13.364 14.978-25.773 14.978-37.227z"></path></svg>investigations@buzzfeed.com</a></p>
+      </div>
+
+      <div class="card xs-p2 xs-mb1 md-mb3">
+        <h2 class="xs-mb2 text-3 bold">Telephone Us</h2>
+        <p class="xs-mb2 bold"><svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" id="#phone" class="xs-align-middle xs-mr1"><path d="M18.387 14.613l-.039-.269c-.09-.269-.714-.549-.97-.676-.727-.409-1.467-.804-2.181-1.224-.331-.204-.74-.587-1.136-.587-.779 0-1.913 2.309-2.601 2.309-.344 0-.791-.319-1.097-.497-2.321-1.289-3.929-2.896-5.217-5.217-.179-.306-.497-.753-.497-1.097 0-.689 2.309-1.824 2.309-2.601 0-.396-.383-.804-.587-1.136-.421-.714-.816-1.454-1.224-2.181-.127-.256-.409-.88-.676-.97l-.269-.039c-.459 0-1.351.204-1.773.396-.626.269-1.033.983-1.351 1.556-.409.753-.65 1.519-.65 2.373 0 1.186.484 2.257.88 3.341.28.779.626 1.53 1.059 2.233 1.34 2.169 3.954 4.783 6.123 6.123.701.434 1.454.779 2.233 1.059 1.084.396 2.156.88 3.341.88.854 0 1.62-.243 2.373-.65.574-.319 1.289-.727 1.556-1.351.191-.421.396-1.314.396-1.773z" fill="#222"/></svg>+1 (212) XXX-XXXX</p>
+        <p class="text-5">Monday - Friday, X a.m. - X p.m. <span class="sm-inline-block">(Eastern Time)</span></p>
+      </div>
+
+      <div class="card xs-p2 xs-mb1 md-mb3">
+        <h2 class="xs-mb2 text-3 bold">Send Us Mail</h2>
+        <p class="xs-mb2 text-5">Send documents or other information, TK TK TK TK… <a href="#">help protect your anonymity&nbsp;›</a></p>
+        <p class="xs-mb1 text-5"><strong class="xs-block bold text-4">BuzzFeed News NY</strong> 111 E. 18th Street, 11th Floor, New York, NY 10003</p>
+        <p class="xs-mb1 text-5"><strong class="xs-block bold text-4">BuzzFeed News London</strong> 40 Argyll Street, 2nd Floor, London, W1F 7EB</p>
+        <p class="text-5"><strong class="xs-block bold text-4">BuzzFeed News Sydney</strong> Tank Stream Labs, Level 1, 17-19 Bridge Street, Sydney, NSW 2000</p>
+      </div>
+
+      <div class="xs-my5">
+        <!-- THIS WAS JUST SCRAPED FROM THE NEW FEEDS NAV. NOT READY FOR PROD. -->
+        <a rel:gt_act="made-in-nyc" class="more__minyc" href="https://wearemadeinny.com/" data-bfa="@a:vertical-more; @d:Made-In-NY;"></a>
+        <ul class="clearfix xs-p0 xs-mb1 list-unstyled">
+          <li><a class="link-gray text-4 col xs-mr1" style="color:#111" href="/advertise" data-bfa="@a:vertical-more; @d:Advertise;">Advertise</a></li>
+          <li><a class="link-gray text-4 col xs-mr1" style="color:#111" href="/about/jobs" data-bfa="@a:vertical-more;@d:Jobs;">Jobs</a></li>
+          <li><a class="link-gray text-4 col xs-mr1" style="color:#111" href="/tools/mobile-ios" data-bfa="@a:vertical-more;@d:Mobile;">Mobile</a></li>
+          <li><a class="link-gray text-4 col xs-mr1" style="color:#111" href="/tools/email" data-bfa="@a:vertical-more;@d:Newsletters;">Newsletters</a></li>
+        </ul>
+        <ul class="clearfix xs-p0 xs-mb1 list-unstyled">
+          <li><a class="link-gray text-6 col xs-mr1" style="color:#111" rel:gt_act="about" href="/about" data-bfa="@a:vertical-more;@d:About;">About</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" style="color:#111" rel:gt_act="press" href="/press" data-bfa="@a:vertical-more;@d:Press;">Press</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" style="color:#111" rel:gt_act="rss" href="/tools/more" data-bfa="@a:vertical-more;@d:RSS;">RSS</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" rel:gt_act="privacy" href="/about/privacy" data-bfa="@a:vertical-more;@d:Privacy;">Privacy</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" rel:gt_act="user-terms" href="/about/useragreement" data-bfa="@a:vertical-more;@d:User-Terms;">User Terms</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" rel:gt_act="ad-choices" href="/about/privacy#adchoices" data-bfa="@a:vertical-more;@d:Ad-Choices;">Ad Choices</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" rel:gt_act="help" href="/help/faq" data-bfa="@a:vertical-more; @d:Help;">Help</a></li>
+          <li><a class="link-gray text-6 col xs-mr1" rel:gt_act="contact" href="/about/contact" data-bfa="@a:vertical-more; @d:Contact;">Contact</a></li>
+        </ul>
+        <ul class="clearfix xs-p0 list-unstyled">
+          <li class="text-gray-lightest text-6 col xs-mr1 md-mb6">© 2016 BuzzFeed, Inc</li>
+        </ul>
+        <!-- /END SCRAPE -->
+      </div>
+
+    </aside>
+
+</div></section>
+    </main>
+
+  </body>
+</html>
